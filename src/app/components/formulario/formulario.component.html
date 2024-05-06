@@ -1,0 +1,30 @@
+<!-- <app (newItemEvent)="addItem($event)"></app-convertion> -->
+<!-- <dialog (addItem)="addItem()"></dialog> -->
+<mat-card>
+    <mat-card-header>
+      <mat-card-title>Formulario</mat-card-title>
+      <mat-card-subtitle>Mascota</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-form-field>
+            <mat-label>Nombre Mascota</mat-label>
+            <input matInput  [formControl]="nombre">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+          <mat-label>Raza</mat-label>
+          <select matNativeControl required [formControl]="tipo">
+            <option value="Perro">Perro</option>
+            <option value="Gato">Gato</option>
+            <option value="Ave">Ave</option>
+            <option value="Pez">Pez</option>
+          </select>
+        </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-flat-button color="accent" (click)="addItem()">Grabar</button>
+    </mat-card-actions>
+</mat-card>
+  <br>
+
+  

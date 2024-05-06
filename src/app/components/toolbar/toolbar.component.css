@@ -1,0 +1,9 @@
+.example-icon {
+    margin-right: 40px; /* Ajusta el margen derecho según sea necesario */
+    margin-left: 40px; /* Ajusta el margen izquierdo según sea necesario */
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  
